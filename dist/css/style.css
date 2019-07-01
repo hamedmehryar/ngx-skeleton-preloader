@@ -1,0 +1,110 @@
+.skeleton {
+  width: 100%;
+  padding: 10px;
+  direction: ltr; }
+  .skeleton.rtl {
+    direction: rtl !important; }
+  .skeleton .skeleton-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 20px #eee;
+    padding: 10px;
+    border-radius: 5px; }
+    .skeleton .skeleton-content .skeleton-row {
+      display: flex;
+      flex-direction: row; }
+    .skeleton .skeleton-content .skeleton-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 1; }
+    .skeleton .skeleton-content .skeleton-round {
+      border-radius: 50px; }
+    .skeleton .skeleton-content .skeleton-small {
+      width: 40px !important;
+      height: 40px !important; }
+    .skeleton .skeleton-content .skeleton-medium {
+      width: 60px !important;
+      height: 60px !important; }
+    .skeleton .skeleton-content .skeleton-large {
+      width: 80px !important;
+      height: 80px !important; }
+    .skeleton .skeleton-content .skeleton-10 {
+      height: 10px; }
+    .skeleton .skeleton-content .skeleton-20 {
+      height: 20px; }
+    .skeleton .skeleton-content .skeleton-50 {
+      height: 50px; }
+    .skeleton .skeleton-content .skeleton-100 {
+      height: 100px; }
+    .skeleton .skeleton-content .skeleton-150 {
+      height: 150px; }
+    .skeleton .skeleton-content .skeleton-200 {
+      height: 200px; }
+    .skeleton .skeleton-content .skeleton-align-center {
+      align-self: center; }
+    .skeleton .skeleton-content .skeleton-justify-center {
+      justify-content: center; }
+    .skeleton .skeleton-content.loading .skeleton-circle, .skeleton .skeleton-content.loading .skeleton-square,
+    .skeleton .skeleton-content.loading .skeleton-line-small, .skeleton .skeleton-content.loading .skeleton-line-xsmall,
+    .skeleton .skeleton-content.loading .skeleton-line-medium, .skeleton .skeleton-content.loading .skeleton-line-xmedium,
+    .skeleton .skeleton-content.loading .skeleton-line-xxmedium, .skeleton .skeleton-content.loading .skeleton-line-large,
+    .skeleton .skeleton-content.loading .skeleton-line-xlarge, .skeleton .skeleton-content.loading .skeleton-line-xxlarge {
+      position: relative;
+      overflow: hidden; }
+      .skeleton .skeleton-content.loading .skeleton-circle::after, .skeleton .skeleton-content.loading .skeleton-square::after,
+      .skeleton .skeleton-content.loading .skeleton-line-small::after, .skeleton .skeleton-content.loading .skeleton-line-xsmall::after,
+      .skeleton .skeleton-content.loading .skeleton-line-medium::after, .skeleton .skeleton-content.loading .skeleton-line-xmedium::after,
+      .skeleton .skeleton-content.loading .skeleton-line-xxmedium::after, .skeleton .skeleton-content.loading .skeleton-line-large::after,
+      .skeleton .skeleton-content.loading .skeleton-line-xlarge::after, .skeleton .skeleton-content.loading .skeleton-line-xxlarge::after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        background: linear-gradient(90deg, transparent, rgba(182, 181, 181, 0.514), transparent);
+        animation: loading 1.5s infinite; }
+    .skeleton .skeleton-content .skeleton-circle, .skeleton .skeleton-content .skeleton-square,
+    .skeleton .skeleton-content .skeleton-line-small, .skeleton .skeleton-content .skeleton-line-xsmall,
+    .skeleton .skeleton-content .skeleton-line-medium, .skeleton .skeleton-content .skeleton-line-xmedium,
+    .skeleton .skeleton-content .skeleton-line-xxmedium, .skeleton .skeleton-content .skeleton-line-large,
+    .skeleton .skeleton-content .skeleton-line-xlarge, .skeleton .skeleton-content .skeleton-line-xxlarge {
+      background: #ddd;
+      margin: 5px; }
+    .skeleton .skeleton-content .skeleton-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 100%; }
+    .skeleton .skeleton-content .skeleton-square {
+      width: 60px;
+      height: 60px; }
+    .skeleton .skeleton-content .skeleton-line-xsmall {
+      width: 10%;
+      height: 10px; }
+    .skeleton .skeleton-content .skeleton-line-small {
+      width: 20%;
+      height: 10px; }
+    .skeleton .skeleton-content .skeleton-line-medium {
+      width: 40%;
+      height: 10px; }
+    .skeleton .skeleton-content .skeleton-line-xmedium {
+      width: 50%;
+      height: 10px; }
+    .skeleton .skeleton-content .skeleton-line-xxmedium {
+      width: 60%;
+      height: 10px; }
+    .skeleton .skeleton-content .skeleton-line-large {
+      width: 80%;
+      height: 10px; }
+    .skeleton .skeleton-content .skeleton-line-xlarge {
+      width: 90%;
+      height: 10px; }
+    .skeleton .skeleton-content .skeleton-line-xxlarge {
+      width: 100%;
+      height: 10px; }
+
+@keyframes loading {
+  100% {
+    transform: translateX(100%); } }
